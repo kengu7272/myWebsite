@@ -1,3 +1,3 @@
-# Portfolio and Website About Me!
+# Portfolio & Website About Me!
 
 Next & Tailwind CSS
