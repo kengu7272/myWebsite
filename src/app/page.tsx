@@ -37,7 +37,7 @@ export default function Home() {
       <button onClick={() => {darkMode && darkMode === 'false' ? setDarkMode('true') : setDarkMode('false')}}><img src="/darkMode.svg" className="w-10 laptop:w-7 h-auto"/></button>
     </header>
 
-    <main className='w-[90vw] laptop:w-[60vw] flex flex-col items-center mt-20 mx-auto bg-[#f5f5f5] rounded-xl'>
+    <main id="main" className='w-[100vw] laptop:w-[60vw] flex flex-col items-center mt-20 mx-auto bg-[#f5f5f5] rounded-xl'>
       <section id="about" className='w-full flex flex-col items-center mt-10'>
         <h1>About me</h1>
 
