@@ -1,18 +1,36 @@
 "use client"
 
+import {  useEffect, useState } from 'react';
+import darkModeToggle from "./darkMode/darkModeToggle"
+
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode'));
+
   const scrollTo = (target: string) => {
     const element: HTMLElement | null = document.getElementById(target);
     element?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
+  useEffect(() => {
+    if(darkMode && darkMode == 'true') {
+      darkModeToggle('true');
+      localStorage.setItem('darkMode', 'true');
+    }
+    else {
+      darkModeToggle('false');
+      localStorage.setItem('darkMode', 'false');
+    }
+
+  }, [darkMode])
+
   return (
     <>
-    <header className="flex w-[100vw] h-20 flex-row items-center justify-center gap-6 text-4xl laptop:text-2xl top-0 fixed bg-[#f5f5f5] border-b">
+    <header id="header" className="flex w-[100vw] h-20 flex-row items-center justify-center gap-6 text-4xl laptop:text-2xl top-0 fixed border-b bg-[#f5f5f5]">
       <button className="hover:border-b border-gray-300 py-2" onClick={() => {window.scrollTo({ top: 0, behavior: 'smooth' })}}>Kevin Nguyen</button>
       <button className="hover:border-b border-gray-300 hidden laptop:block py-2" onClick={() => scrollTo('about')}>About Me</button>
       <button className="hover:border-b border-gray-300 hidden laptop:block py-2" onClick={() => scrollTo('education')}>Education</button>
       <button className="hover:border-b border-gray-300 hidden laptop:block py-2" onClick={() => scrollTo('experience')}>Experience</button>
+      <button onClick={() => {darkMode && darkMode === 'false' ? setDarkMode('true') : setDarkMode('false')}}><img src="/darkMode.svg" className="w-10 laptop:w-7 h-auto"/></button>
     </header>
 
     <main className='w-[100vw] flex flex-col items-center mt-16'>
