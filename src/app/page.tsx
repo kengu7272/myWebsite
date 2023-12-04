@@ -4,7 +4,11 @@ import {  useEffect, useState } from 'react';
 import darkModeToggle from "./darkMode/darkModeToggle"
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode'));
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof localStorage !== 'undefined') {
+      return localStorage.getItem('darkMode');
+    }
+  });
 
   const scrollTo = (target: string) => {
     const element: HTMLElement | null = document.getElementById(target);
