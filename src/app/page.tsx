@@ -37,8 +37,8 @@ export default function Home() {
       <button onClick={() => {darkMode && darkMode === 'false' ? setDarkMode('true') : setDarkMode('false')}}><img src="/darkMode.svg" className="w-10 laptop:w-7 h-auto"/></button>
     </header>
 
-    <main className='w-[100vw] flex flex-col items-center mt-16'>
-      <section id="about" className='w-[90%] laptop:w-[55%] flex flex-col items-center mt-10'>
+    <main className='w-[90vw] laptop:w-[60vw] flex flex-col items-center mt-20 mx-auto bg-[#f5f5f5] rounded-xl'>
+      <section id="about" className='w-full flex flex-col items-center mt-10'>
         <h1>About me</h1>
 
         <div className="flex flex-col laptop:flex-row items-center justify-center w-full mt-10 gap-12">
@@ -72,7 +72,7 @@ export default function Home() {
         <br />
       </section>
 
-      <section id="education" className='w-[90%] laptop:w-[60%] flex flex-col items-center mt-10'>
+      <section id="education" className='w-full flex flex-col items-center mt-10'>
         <h1>Education</h1>
         
         <div className="w-full flex justify-center mt-10 flex-wrap gap-2">
