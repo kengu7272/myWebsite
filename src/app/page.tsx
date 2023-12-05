@@ -112,7 +112,7 @@ export default function Home() {
         <section id="experience" className='w-full flex flex-col items-center mt-10 gap-2 mb-20'>
           <h1>Experience</h1>
 
-          <div className='w-full desktop:w-[90%] border rounded-xl hover:border-gray-300 mt-10 p-8'>
+          <div className='w-full desktop:w-[90%] flex flex-col justify-center items-center border rounded-xl hover:border-gray-300 mt-10 p-8 h-96'>
             <h2 className='w-full text-center'>Analytics Intern</h2>
             <h3 className='w-full text-center'>Biblish</h3>
             <p className='w-full text-center font-bold'>Nov 2023 - Feb 2024</p>
@@ -123,7 +123,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='w-full desktop:w-[90%] border rounded-xl hover:border-gray-300 p-8'>
+          <div className='w-full desktop:w-[90%] flex flex-col justify-center items-center border rounded-xl hover:border-gray-300 p-8 h-96'>
             <h2 className='w-full text-center'>IT Intern</h2>
             <h3 className='w-full text-center'>Goodyear</h3>
             <p className='w-full text-center font-bold'>May 2023 - Aug 2023</p>
@@ -135,7 +135,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='w-full desktop:w-[90%] border rounded-xl hover:border-gray-300 p-8'>
+          <div className='w-full desktop:w-[90%] flex flex-col justify-center items-center border rounded-xl hover:border-gray-300 p-8 h-96'>
             <h2 className='w-full text-center'>Shift Leader</h2>
             <h3 className='w-full text-center'>Dairy Queen</h3>
             <p className='w-full text-center font-bold'>Jul 2019 - Present</p>
