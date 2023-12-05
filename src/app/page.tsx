@@ -3,6 +3,7 @@
 import {  useEffect, useState } from 'react';
 import darkModeToggle from "./darkMode/darkModeToggle"
 import scrollTo from './scrollTo/scrollTo';
+import Image from 'next/image';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -30,7 +31,7 @@ export default function Home() {
         <button className="hover:border-b border-gray-300 hidden desktop:block py-1" onClick={() => scrollTo('about')}>About Me</button>
         <button className="hover:border-b border-gray-300 hidden desktop:block py-1" onClick={() => scrollTo('education')}>Education</button>
         <button className="hover:border-b border-gray-300 hidden desktop:block py-1" onClick={() => scrollTo('experience')}>Experience</button>
-        <button onClick={() => {darkMode && darkMode === 'false' ? setDarkMode('true') : setDarkMode('false')}}><img src="/darkMode.svg" className="w-10 desktop:w-7 h-auto"/></button>
+        <button onClick={() => {darkMode && darkMode === 'false' ? setDarkMode('true') : setDarkMode('false')}}><Image src="/darkMode.svg" alt='dark mode icon' className="w-10 desktop:w-7 h-auto"/></button>
       </header>
 
       <main id="main" className='w-[100vw] desktop:w-[60vw] flex flex-col items-center mt-20 mx-auto bg-[#f5f5f5] rounded-xl'>
@@ -40,19 +41,19 @@ export default function Home() {
           <div className="flex flex-col desktop:flex-row items-center justify-center w-full mt-10 gap-12">
             <div className="w-[95%] desktop:w-[45%] flex flex-col items-center">
               <p>
-                Hi! I'm Kevin, and I was born and raised in Akron, Ohio. I currently attend The University of Akron for a Bachelor's in Computer Science and have previously
-                completed an Associate's in Technical Studies there during high school as well. I'll be graduating in 2024 and aspire to be a software engineer. 
+                Hi! I&apos;m Kevin, and I was born and raised in Akron, Ohio. I currently attend The University of Akron for a Bachelor&apos;s in Computer Science and have previously
+                completed an Associate&apos;s in Technical Studies there during high school as well. I&apos;ll be graduating in 2024 and aspire to be a software engineer. 
                 <br /><br />
               </p>
               <p className="font-bold w-full text-center text-lg">Pictured is me and my girlfriend Britney <span className="hidden desktop:block">&rarr;</span></p>
             </div>
-            <img className="w-[95%] desktop:w-[45%] h-auto rounded-2xl" src="/mengf.jpg" /> 
+            <Image alt='me and my girlfriend' className="w-[95%] desktop:w-[45%] h-auto rounded-2xl" src="/mengf.jpg" /> 
           </div>      
 
           <br />
 
           <div className="flex flex-col desktop:flex-row items-center justify-center w-full gap-12">
-            <img className="w-[95%] desktop:w-[45%] h-auto rounded-2xl hidden desktop:block" src="/mt10.jpg"/>
+            <Image alt='my mt-10' className="w-[95%] desktop:w-[45%] h-auto rounded-2xl hidden desktop:block" src="/mt10.jpg"/>
             <div className="w-[95%] desktop:w-[45%]">
               <p>
                 Some of my hobbies include lifting, video games, and riding my motorcycle. The motorcycle was a more recent impulsive purchase. For the interested people, it is a 2021 Yamaha MT-10, that i just upgraded from a 2023 Yamaha R3!
@@ -62,7 +63,7 @@ export default function Home() {
               </p>
               <p className="font-bold w-full text-center text-lg">Pictured is my MT-10 <span className="hidden desktop:block">&larr;</span></p>
             </div>
-            <img className="w-[95%] latop:w-[45%] h-auto rounded-2xl desktop:hidden" src="/mt10.jpg"/>
+            <Image alt='my mt=10' className="w-[95%] latop:w-[45%] h-auto rounded-2xl desktop:hidden" src="/mt10.jpg"/>
           </div>
 
           <br />
@@ -76,7 +77,7 @@ export default function Home() {
               <h2>The University of Akron</h2>
               <p>2020-2024</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
-                <p>After High School, I decided to pursue a Bachelor's in <span className="font-bold">Computer Science</span>!
+                <p>After High School, I decided to pursue a Bachelor&apos;s in <span className="font-bold">Computer Science</span>!
                   I mainly learned C++, web technologies, and a little bit of Python during my coursework here.</p>
               </div>
             </div>
@@ -85,8 +86,8 @@ export default function Home() {
               <h2>The University of Akron</h2>
               <p>2018-2020</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
-                <p>During High School, I was offered an opportunity to get an Associate's degree through the University of Akron
-                  during my time at the Portage Lakes Career Center, granting an Associate's in <span className="font-bold">Technical Studies</span>!</p>
+                <p>During High School, I was offered an opportunity to get an Associate&apos;s degree through the University of Akron
+                  during my time at the Portage Lakes Career Center, granting an Associate&apos;s in <span className="font-bold">Technical Studies</span>!</p>
               </div>
             </div>
 
