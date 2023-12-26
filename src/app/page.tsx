@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <header id="header" className="flex w-[100vw] h-20 flex-row items-center justify-center gap-6 text-4xl desktop:text-2xl top-0 fixed border-b bg-[#f5f5f5]">
-        <button className="hover:border-b border-gray-300 py-1" onClick={() => {window.scrollTo({ top: 0, behavior: 'smooth' })}}>Kevin</button>
+        <button className="hover:border-b border-gray-300 py-1" onClick={() => {window.scrollTo({ top: 0, behavior: 'smooth' })}}>Kevin Nguyen</button>
         <button className="hover:border-b border-gray-300 hidden desktop:block py-1" onClick={() => scrollTo('about')}>About Me</button>
         <button className="hover:border-b border-gray-300 hidden desktop:block py-1" onClick={() => scrollTo('education')}>Education</button>
         <button className="hover:border-b border-gray-300 hidden desktop:block py-1" onClick={() => scrollTo('experience')}>Experience</button>
