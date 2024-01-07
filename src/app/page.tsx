@@ -41,7 +41,7 @@ export default function Home() {
 
       <main
         id="main"
-        className="w-screen desktop:w-[60vw] flex flex-col items-center mt-20 mx-auto bg-white rounded-xl shadow-sm"
+        className="w-screen desktop:w-[60vw] flex flex-col items-center mt-20 mx-auto bg-white rounded-xl shadow-md"
       >
         <section id="about" className="w-full flex flex-col items-center mt-10">
           <h1>About me</h1>
@@ -67,7 +67,7 @@ export default function Home() {
               alt="me and my girlfriend"
               width={1000}
               height={1000}
-              className="w-[95%] desktop:w-[45%] h-auto rounded-2xl"
+              className="w-[95%] desktop:w-[45%] h-auto rounded-2xl shadow-md"
               src="/mengf.jpg"
             />
           </div>
@@ -79,7 +79,7 @@ export default function Home() {
               alt="my mt-10"
               width={1000}
               height={1000}
-              className="w-[95%] desktop:w-[45%] h-auto rounded-2xl hidden desktop:block"
+              className="w-[95%] desktop:w-[45%] h-auto rounded-2xl hidden shadow-md desktop:block"
               src="/mt10.jpg"
             />
             <div className="w-[95%] desktop:w-[45%] flex flex-col justify-center items-center mt-10">
@@ -104,7 +104,7 @@ export default function Home() {
               alt="my mt=10"
               width={1000}
               height={1000}
-              className="w-[95%] latop:w-[45%] h-auto rounded-2xl desktop:hidden"
+              className="w-[95%] latop:w-[45%] h-auto rounded-2xl desktop:hidden shadow-md"
               src="/mt10.jpg"
             />
           </div>
@@ -119,7 +119,7 @@ export default function Home() {
           <h1>Education</h1>
 
           <div className="w-full flex justify-center mt-10 flex-wrap gap-2">
-            <div className="flex flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:border-gray-300">
+            <div className="flex shadow-md flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:border-gray-300">
               <h2>The University of Akron</h2>
               <p>2020-2024</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -132,7 +132,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:border-gray-300">
+            <div className="flex shadow-md flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:border-gray-300">
               <h2>The University of Akron</h2>
               <p>2018-2020</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:border-gray-300">
+            <div className="flex shadow-md flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:border-gray-300">
               <h2>Portage Lakes Career Center</h2>
               <p>2018-2020</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -162,7 +162,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:border-gray-300">
+            <div className="flex flex-col shadow-md items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:border-gray-300">
               <h2>Coventry High School</h2>
               <p>2016-2020</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -181,7 +181,7 @@ export default function Home() {
         >
           <h1>Experience</h1>
 
-          <div className="w-full desktop:w-[90%] flex flex-col gap-2 justify-center items-center border rounded-xl hover:border-gray-300 mt-10 p-8 h-96">
+          <div className="w-full desktop:w-[90%] flex flex-col gap-2 justify-center items-center border rounded-xl hover:border-gray-300 mt-10 p-8 h-96 shadow-md">
             <h2 className="w-full text-center">Intern</h2>
             <h3 className="w-full text-center">Biblish</h3>
             <p className="w-full text-center font-bold">Nov 2023 - Feb 2024</p>
@@ -193,7 +193,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full desktop:w-[90%] flex gap-2 flex-col justify-center items-center border rounded-xl hover:border-gray-300 p-8 h-96">
+          <div className="w-full desktop:w-[90%] flex gap-2 flex-col justify-center items-center border rounded-xl hover:border-gray-300 p-8 h-96 shadow-md">
             <h2 className="w-full text-center">IT Intern</h2>
             <h3 className="w-full text-center">Goodyear</h3>
             <p className="w-full text-center font-bold">May 2023 - Aug 2023</p>
@@ -207,7 +207,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full desktop:w-[90%] flex gap-2 flex-col justify-center items-center border rounded-xl hover:border-gray-300 p-8 h-96">
+          <div className="w-full desktop:w-[90%] flex gap-2 flex-col justify-center items-center border rounded-xl hover:border-gray-300 p-8 h-96 shadow-md">
             <h2 className="w-full text-center">Shift Leader</h2>
             <h3 className="w-full text-center">Dairy Queen</h3>
             <p className="w-full text-center font-bold">Jul 2019 - Present</p>
