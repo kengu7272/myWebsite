@@ -1,5 +1,3 @@
-"use client";
-
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import scrollTo from "./scrollTo/scrollTo";
 import Image from "next/image";
