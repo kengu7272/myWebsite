@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import scrollTo from "./scrollTo/scrollTo";
 import Image from "next/image";
+import { HeaderButtons, FooterButton } from "./_components/headerFooterButtons";
 
 export default function Home() {
   return (
@@ -9,32 +9,7 @@ export default function Home() {
         id="header"
         className="flex w-screen h-20 dark:bg-zinc-700 dark:border-zinc-600 flex-row items-center justify-center gap-6 text-4xl desktop:text-2xl top-0 fixed border-b bg-white shadow-sm opacity-95"
       >
-        <button
-          className="hover:border-b border-gray-300 py-1"
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          Kevin Nguyen
-        </button>
-        <button
-          className="hover:border-b border-gray-300 hidden desktop:block py-1"
-          onClick={() => scrollTo("about")}
-        >
-          About Me
-        </button>
-        <button
-          className="hover:border-b border-gray-300 hidden desktop:block py-1"
-          onClick={() => scrollTo("education")}
-        >
-          Education
-        </button>
-        <button
-          className="hover:border-b border-gray-300 hidden desktop:block py-1"
-          onClick={() => scrollTo("experience")}
-        >
-          Experience
-        </button>
+        <HeaderButtons />
       </header>
 
       <main
@@ -225,14 +200,7 @@ export default function Home() {
         className="w-screen h-20 flex dark:bg-zinc-700 dark:border-zinc-600 flex-row justify-center items-center border-t gap-2 bg-white"
       >
         <p>Hey, you made it to the bottom!</p>
-        <button
-          onClick={() => {
-            scrollTo("about");
-          }}
-          className="border-b hover:border-gray-300 font-bold"
-        >
-          Scroll to top
-        </button>
+        <FooterButton />
       </footer>
     </div>
   );
