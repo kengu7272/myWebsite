@@ -92,7 +92,7 @@ export default function Home() {
           <h1>Education</h1>
 
           <div className="w-full flex justify-center mt-10 flex-wrap gap-4">
-            <div className="flex dark:border-zinc-600 shadow-md flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:scale-105">
+            <div className="flex dark:border-zinc-600 shadow-md dark:shadow-zinc-600 flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:scale-105">
               <h2>The University of Akron</h2>
               <p>2020-2024</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -105,7 +105,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex dark:border-zinc-600 shadow-md flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:scale-105 ">
+            <div className="flex dark:border-zinc-600 shadow-md dark:shadow-zinc-600 flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:scale-105 ">
               <h2>The University of Akron</h2>
               <p>2018-2020</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -119,7 +119,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex shadow-md hover:scale-105 flex-col dark:border-zinc-600 items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl ">
+            <div className="flex shadow-md hover:scale-105 flex-col dark:border-zinc-600 dark:shadow-zinc-600 items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl ">
               <h2>Portage Lakes Career Center</h2>
               <p>2018-2020</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -135,7 +135,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col shadow-md items-center hover:scale-105 border dark:border-zinc-600 p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl ">
+            <div className="flex flex-col shadow-md items-center hover:scale-105 dark:shadow-zinc-600 border dark:border-zinc-600 p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl ">
               <h2>Coventry High School</h2>
               <p>2016-2020</p>
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -154,7 +154,7 @@ export default function Home() {
         >
           <h1>Experience</h1>
 
-          <div className="w-full desktop:w-[90%] hover:scale-105 flex flex-col gap-2 justify-center items-center dark:border-zinc-600 border rounded-xl  mt-10 p-8 h-96 shadow-md">
+          <div className="w-full desktop:w-[90%] hover:scale-105 flex flex-col gap-2 justify-center items-center dark:border-zinc-600 border rounded-xl  mt-10 p-8 h-96 shadow-md dark:shadow-zinc-600">
             <h2 className="w-full text-center">Intern</h2>
             <h3 className="w-full text-center">Biblish</h3>
             <p className="w-full text-center font-bold">Nov 2023 - Feb 2024</p>
@@ -166,7 +166,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full desktop:w-[90%] flex gap-2 flex-col hover:scale-105 justify-center items-center border dark:border-zinc-600 rounded-xl  p-8 h-96 shadow-md">
+          <div className="w-full desktop:w-[90%] flex gap-2 flex-col hover:scale-105 justify-center items-center border dark:border-zinc-600 rounded-xl  p-8 h-96 shadow-md dark:shadow-zinc-600">
             <h2 className="w-full text-center">IT Intern</h2>
             <h3 className="w-full text-center">Goodyear</h3>
             <p className="w-full text-center font-bold">May 2023 - Aug 2023</p>
@@ -180,7 +180,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full desktop:w-[90%] flex gap-2 flex-col justify-center hover:scale-105 items-center border rounded-xl dark:border-zinc-600  p-8 h-96 shadow-md">
+          <div className="w-full desktop:w-[90%] flex gap-2 flex-col justify-center hover:scale-105 items-center border rounded-xl dark:border-zinc-600  p-8 h-96 shadow-md dark:shadow-zinc-600">
             <h2 className="w-full text-center">Shift Leader</h2>
             <h3 className="w-full text-center">Dairy Queen</h3>
             <p className="w-full text-center font-bold">Jul 2019 - Present</p>
