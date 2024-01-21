@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ["www.carlogos.org"],
+    formats: ["image/webp"],
+  },
+};
 
 module.exports = nextConfig;

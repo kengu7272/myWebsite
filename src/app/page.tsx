@@ -1,207 +1,122 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { HeaderButtons, FooterButton } from "./_components/headerFooterButtons";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="text-center">
-      <header
-        id="header"
-        className="flex w-screen h-20 dark:bg-zinc-700 dark:border-zinc-600 flex-row items-center justify-center gap-6 text-4xl desktop:text-2xl top-0 fixed border-b bg-white shadow-sm opacity-95"
-      >
-        <HeaderButtons />
-      </header>
+    <main className="relative w-screen min-h-screen flex flex-col py-24 items-center gap-24 px-2 lg:px-40 2xl:px-72">
+      <section className="w-full">
+        <div className="flex flex-col justify-center gap-2 w-full">
+          <h1 className="text-5xl font-bold">Kevin Nguyen</h1>
+          <span className="text-xl">Computer Science Student</span>
+          <span>Aspiring Software Engineer</span>
+        </div>
+      </section>
 
-      <main
-        id="main"
-        className="w-screen desktop:w-[60vw] dark:bg-zinc-700 flex flex-col items-center mt-20 mx-auto bg-white rounded-xl shadow-md"
-      >
-        <section id="about" className="w-full flex flex-col items-center mt-10">
-          <h1>About me</h1>
+      <section className="flex flex-col lg:flex-row justify-center lg:justify-between gap-4 w-full">
+        <div className="flex flex-col gap-4 lg:w-1/2">
+          <h1 className="text-3xl">ABOUT</h1>
+          <p>
+            I was born and raised in Akron, Ohio, and started my little Computer
+            Science journey at The University of Akron. There we mainly worked with 
+            languages such as C++, which was utterly confusing at first, yet extremely interesting.
+          </p>
+          <p>
+            I currently have the pleasure of interning at a start up called <strong>Biblish </strong> 
+            where I assume a role of a mix between a software development and analytics position.
+          </p>
+          <p>My interests outside of Computer Science include hanging out with friends and of course girlfriend, video games, lifting, and more recently riding my new motorcycle (2021 Yamaha MT-10 for those interested).</p>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-2">
+          <Image
+            src={"/mengf.jpg"}
+            alt="Me and my girlfriend"
+            height={600}
+            width={600}
+            className="rounded-lg shadow-sm"
+          />
+          <span className="text-sm text-gray-500">
+            Pictured me and my girlfriend
+          </span>
+        </div>
+      </section>
 
-          <div className="flex flex-col desktop:flex-row items-center justify-center w-full mt-10 gap-12">
-            <div className="w-[95%] desktop:w-[45%] flex flex-col items-center">
-              <p>
-                Hi! I&apos;m Kevin, and I was born and raised in Akron, Ohio. I
-                currently attend The University of Akron for a Bachelor&apos;s
-                in Computer Science and have previously completed an
-                Associate&apos;s in Technical Studies there during high school
-                as well. I&apos;ll be graduating in 2024 and aspire to be a
-                software engineer.
-                <br />
-                <br />
-              </p>
-              <p className="font-bold w-full text-center text-lg">
-                Pictured is me and my girlfriend Britney
-              </p>
-              <ChevronRight className="hidden desktop:block mt-4 h-8 w-auto" />
+      <section className="flex flex-col w-full">
+        <h1 className="text-4xl">Education</h1>
+        <div className="gap-8 flex flex-col lg:flex-row pt-8">
+          <div className="flex justify-between items-center w-full lg:gap-8 bg-white shadow-sm py-6 2xl:py-12 px-2 2xl:px-16 rounded-lg">
+            <div className="flex flex-col gap-2 text-center">
+              <strong>The University of Akron</strong>
+              <span>B.S. Computer Science</span>
+              <span>2020 - 2024</span>
+              <span>3.881</span>
             </div>
             <Image
-              alt="me and my girlfriend"
-              width={1000}
-              height={1000}
-              className="w-[95%] desktop:w-[45%] h-auto rounded-2xl shadow-md"
-              src="/mengf.jpg"
+              src={"/University_of_Akron_seal.svg"}
+              alt="Me and my girlfriend"
+              height={120}
+              width={120}
+              className="rounded-lg"
             />
           </div>
-
-          <br />
-
-          <div className="flex flex-col desktop:flex-row items-center justify-center w-full gap-12">
-            <Image
-              alt="my mt-10"
-              width={1000}
-              height={1000}
-              className="w-[95%] desktop:w-[45%] h-auto rounded-2xl hidden shadow-md desktop:block"
-              src="/mt10.jpg"
-            />
-            <div className="w-[95%] desktop:w-[45%] flex flex-col justify-center items-center mt-10">
-              <p>
-                Some of my hobbies include lifting, video games, and riding my
-                motorcycle. The motorcycle was a more recent impulsive purchase.
-                For the interested people, it is a 2021 Yamaha MT-10, that i
-                just upgraded from a 2023 Yamaha R3!
-                <br />
-                <br />
-                Fun fact: I got hit by a car the first day I got my new bike and
-                had to wait a month to get it fixed.
-                <br />
-                <br />
-              </p>
-              <p className="font-bold w-full text-center text-lg">
-                Pictured is my MT-10
-              </p>
-              <ChevronLeft className="hidden desktop:block mt-4 h-8 w-auto" />
+          <div className="flex justify-between items-center w-full lg:gap-8 bg-white shadow-sm py-6 px-2 2xl:py-12 2xl:px-16 rounded-lg">
+            <div className="flex flex-col gap-2 text-center">
+              <strong>The University of Akron</strong>
+              <span>A.S. Technical Studies</span>
+              <span>2018 - 2020</span>
+              <span>4.0</span>
             </div>
             <Image
-              alt="my mt=10"
-              width={1000}
-              height={1000}
-              className="w-[95%] latop:w-[45%] h-auto rounded-2xl desktop:hidden shadow-md"
-              src="/mt10.jpg"
+              src={"/University_of_Akron_seal.svg"}
+              alt="Me and my girlfriend"
+              height={120}
+              width={120}
+              className="rounded-lg"
             />
           </div>
+        </div>
+      </section>
 
-          <br />
-        </section>
-
-        <section
-          id="education"
-          className="w-full flex flex-col items-center mt-10"
-        >
-          <h1>Education</h1>
-
-          <div className="w-full flex justify-center mt-10 flex-wrap gap-4">
-            <div className="flex dark:border-zinc-600 shadow-md dark:shadow-zinc-600 flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:scale-105">
-              <h2>The University of Akron</h2>
-              <p>2020-2024</p>
-              <div className="flex flex-col items-center justify-center h-full text-center">
-                <p>
-                  After High School, I decided to pursue a Bachelor&apos;s in{" "}
-                  <span className="font-bold">Computer Science</span>! I mainly
-                  learned C++, web technologies, and a little bit of Python
-                  during my coursework here.
-                </p>
-              </div>
+      <section className="flex flex-col justify-center w-full">
+        <h1 className="text-4xl">Experience</h1>
+        <div className="gap-8 flex flex-col lg:flex-row pt-8">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-12 justify-between items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 rounded-lg">
+            <div className="flex flex-col gap-2 text-center">
+              <strong>Biblish</strong>
+              <span>Intern</span>
+              <span>Nov 2023 - Present</span>
+              <ul className="list-disc text-sm text-left text-gray-700">
+                <li>Next.js full stack development</li>
+                <li>Focus on {'"Submissions"'} product</li>
+                <li>Retool & PostHog for dashboards & analytics</li>
+              </ul>
             </div>
-
-            <div className="flex dark:border-zinc-600 shadow-md dark:shadow-zinc-600 flex-col items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl hover:scale-105 ">
-              <h2>The University of Akron</h2>
-              <p>2018-2020</p>
-              <div className="flex flex-col items-center justify-center h-full text-center">
-                <p>
-                  During High School, I was offered an opportunity to get an
-                  Associate&apos;s degree through the University of Akron during
-                  my time at the Portage Lakes Career Center, granting an
-                  Associate&apos;s in{" "}
-                  <span className="font-bold">Technical Studies</span>!
-                </p>
-              </div>
+            <Image
+              src={"/biblish.svg"}
+              alt="Me and my girlfriend"
+              height={120}
+              width={120}
+              className="rounded-lg"
+            />
+          </div>
+          <div className="flex flex-col-reverse 2xl:flex-row justify-between items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 lg:px-12 rounded-lg">
+            <div className="flex flex-col gap-2 text-center">
+              <strong>Goodyear</strong>
+              <span>Intern</span>
+              <span>May 2023 - Aug 2023</span>
+              <ul className="list-disc text-sm text-left text-gray-700">
+                <li>Flexera software asset management tool</li>
+                <li>Focus on Java licensing and devices on the cloud</li>
+              </ul>
             </div>
-
-            <div className="flex shadow-md hover:scale-105 flex-col dark:border-zinc-600 dark:shadow-zinc-600 items-center border p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl ">
-              <h2>Portage Lakes Career Center</h2>
-              <p>2018-2020</p>
-              <div className="flex flex-col items-center justify-center h-full text-center">
-                <p>
-                  During my Junior and Senior years in High School, I chose to
-                  attend a career tech school with a focus in the{" "}
-                  <span className="font-bold">
-                    Networking/Cyber Academy Classes
-                  </span>
-                  ! There I learned the basics of networking, technical terms,
-                  HTML, and other various things related to technology.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col shadow-md items-center hover:scale-105 dark:shadow-zinc-600 border dark:border-zinc-600 p-8 desktop:p-2 w-full desktop:w-[45%] h-96 desktop:h-56 rounded-xl ">
-              <h2>Coventry High School</h2>
-              <p>2016-2020</p>
-              <div className="flex flex-col items-center justify-center h-full text-center">
-                <p>
-                  I attended this little school here in the city of Akron where
-                  I eventually graduated second in my class!
-                </p>
-              </div>
-            </div>
+            <Image
+              src={"https://www.carlogos.org/tire-logos/goodyear-logo.png"}
+              alt="Me and my girlfriend"
+              height={120}
+              width={120}
+              className="rounded-lg"
+            />
           </div>
-        </section>
-
-        <section
-          id="experience"
-          className="w-full flex flex-col items-center mt-10 gap-4 mb-20"
-        >
-          <h1>Experience</h1>
-
-          <div className="w-full desktop:w-[90%] hover:scale-105 flex flex-col gap-2 justify-center items-center dark:border-zinc-600 border rounded-xl  mt-10 p-8 h-96 shadow-md dark:shadow-zinc-600">
-            <h2 className="w-full text-center">Intern</h2>
-            <h3 className="w-full text-center">Biblish</h3>
-            <p className="w-full text-center font-bold">Nov 2023 - Feb 2024</p>
-            <p className="mx-4 desktop:mx-20 text-center">
-              I accepted a position at Biblish in November of 2023 where I would
-              mainly work on their products Papertrail and Submissions! There I
-              leveraged tools such as Retool and PostHog for analytics and Next
-              JS for development.
-            </p>
-          </div>
-
-          <div className="w-full desktop:w-[90%] flex gap-2 flex-col hover:scale-105 justify-center items-center border dark:border-zinc-600 rounded-xl  p-8 h-96 shadow-md dark:shadow-zinc-600">
-            <h2 className="w-full text-center">IT Intern</h2>
-            <h3 className="w-full text-center">Goodyear</h3>
-            <p className="w-full text-center font-bold">May 2023 - Aug 2023</p>
-            <p className="mx-4 desktop:mx-20 text-center">
-              I interned at Goodyear during the summer of 2023. There, I was on
-              the Flexera team which was their choice of a software asset
-              management tool. Utilizing Flexera and tools such as Excel, I was
-              able to gather and monitor data regarding commercial software
-              usage from every tracked device to ensure software license
-              compliance.
-            </p>
-          </div>
-
-          <div className="w-full desktop:w-[90%] flex gap-2 flex-col justify-center hover:scale-105 items-center border rounded-xl dark:border-zinc-600  p-8 h-96 shadow-md dark:shadow-zinc-600">
-            <h2 className="w-full text-center">Shift Leader</h2>
-            <h3 className="w-full text-center">Dairy Queen</h3>
-            <p className="w-full text-center font-bold">Jul 2019 - Present</p>
-            <p className="mx-4 desktop:mx-20 text-center">
-              My first job! Here, I worked with a team ranging from 6-12
-              employees and collaborated to complete orders and ensure customer
-              satisfaction. As a shift leader, I assisted to train employees,
-              maintain all stations, and handled cash-related duties. 10/10,
-              would recommend for a first job.
-            </p>
-          </div>
-        </section>
-      </main>
-
-      <footer
-        id="footer"
-        className="w-screen h-20 flex dark:bg-zinc-700 dark:border-zinc-600 flex-row justify-center items-center border-t gap-2 bg-white"
-      >
-        <p>Hey, you made it to the bottom!</p>
-        <FooterButton />
-      </footer>
-    </div>
+        </div>
+      </section>
+    </main>
   );
 }
