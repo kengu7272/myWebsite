@@ -1,13 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
+import Badge from "./_components/badge";
 
 export default function Page() {
   return (
     <main className="relative w-screen min-h-screen flex flex-col py-24 items-center gap-24 px-2 lg:px-40 2xl:px-72">
-      <section className="w-full">
-        <div className="flex flex-col justify-center gap-2 w-full">
+      <section className="w-full flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-24">
+        <div className="flex flex-col justify-center gap-2">
           <h1 className="text-5xl font-bold">Kevin Nguyen</h1>
           <span className="text-xl">Computer Science Student</span>
           <span>Aspiring Software Engineer</span>
+        </div>
+        <div className="flex items-center gap-4">
+          <Link href="https://github.com/kengu7272">
+            <Image src={"/github-mark.svg"} height={50} width={50} alt="github logo" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/kevin-nguyen-160354232/">
+            <Image src={"/linkedin.svg"} height={50} width={50} alt="linkedin logo" />
+          </Link>
         </div>
       </section>
 
@@ -40,7 +50,7 @@ export default function Page() {
       </section>
 
       <section className="flex flex-col w-full">
-        <h1 className="text-4xl">Education</h1>
+        <h1 className="text-3xl">EDUCATION</h1>
         <div className="gap-8 flex flex-col lg:flex-row pt-8">
           <div className="flex justify-between items-center w-full lg:gap-8 bg-white shadow-sm py-6 2xl:py-12 px-2 2xl:px-16 rounded-lg">
             <div className="flex flex-col gap-2 text-center">
@@ -76,18 +86,27 @@ export default function Page() {
       </section>
 
       <section className="flex flex-col justify-center w-full">
-        <h1 className="text-4xl">Experience</h1>
+        <h1 className="text-3xl">EXPERIENCE</h1>
         <div className="gap-8 flex flex-col lg:flex-row pt-8">
-          <div className="flex flex-col-reverse lg:flex-row lg:px-12 justify-between items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 rounded-lg">
-            <div className="flex flex-col gap-2 text-center">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 justify-between items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 rounded-lg">
+            <div className="flex flex-col items-center gap-2 text-center">
               <strong>Biblish</strong>
               <span>Intern</span>
               <span>Nov 2023 - Present</span>
-              <ul className="list-disc text-sm text-left text-gray-700">
+              <ul className="text-sm text-gray-600">
                 <li>Next.js full stack development</li>
                 <li>Focus on {'"Submissions"'} product</li>
                 <li>Retool & PostHog for dashboards & analytics</li>
               </ul>
+              <div className="hidden lg:flex items-center justify-center gap-2 flex-wrap">
+                <Badge word="Next.js" />
+                <Badge word="React" />
+                <Badge word="Tailwind CSS" />
+                <Badge word="tRPC" />
+                <Badge word="Drizzle ORM" />
+                <Badge word="MySQL" />
+                <Badge word="TypeScript" />
+              </div>
             </div>
             <Image
               src={"/biblish.svg"}
@@ -97,15 +116,19 @@ export default function Page() {
               className="rounded-lg"
             />
           </div>
-          <div className="flex flex-col-reverse 2xl:flex-row justify-between items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 lg:px-12 rounded-lg">
+          <div className="flex flex-col-reverse lg:flex-row justify-between lg:px-6 items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 rounded-lg">
             <div className="flex flex-col gap-2 text-center">
               <strong>Goodyear</strong>
               <span>Intern</span>
               <span>May 2023 - Aug 2023</span>
-              <ul className="list-disc text-sm text-left text-gray-700">
+              <ul className="text-sm text-gray-600">
                 <li>Flexera software asset management tool</li>
                 <li>Focus on Java licensing and devices on the cloud</li>
               </ul>
+              <div className="hidden lg:flex items-center justify-center gap-2 flex-wrap">
+                <Badge word="Flexera" />
+                <Badge word="Excel" />
+              </div>
             </div>
             <Image
               src={"https://www.carlogos.org/tire-logos/goodyear-logo.png"}
