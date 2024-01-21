@@ -12,10 +12,10 @@ export default function Page() {
           <span>Aspiring Software Engineer</span>
         </div>
         <div className="flex items-center gap-4">
-          <Link href="https://github.com/kengu7272">
+          <Link href="https://github.com/kengu7272" className="hover:scale-105">
             <Image src={"/github-mark.svg"} height={50} width={50} alt="github logo" />
           </Link>
-          <Link href="https://www.linkedin.com/in/kevin-nguyen-160354232/">
+          <Link href="https://www.linkedin.com/in/kevin-nguyen-160354232/" className="hover:scale-105">
             <Image src={"/linkedin.svg"} height={50} width={50} alt="linkedin logo" />
           </Link>
         </div>
