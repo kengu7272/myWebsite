@@ -8,7 +8,7 @@ export default function Page() {
         <h1 className="font-bold text-4xl mt-32">My Links (so far)</h1>
         <Link
           href="https://github.com/kengu7272"
-          className="hover:scale-105 shadow-sm rounded-lg bg-white h-20 flex justify-center items-center w-72 gap-4 "
+          className="hover:scale-105 shadow-sm rounded-lg bg-white h-20 flex justify-center items-center w-72 gap-4 border"
         >
           <strong className="text-3xl">Github</strong>
           <Image
@@ -20,7 +20,7 @@ export default function Page() {
         </Link>
         <Link
           href="https://www.linkedin.com/in/kevin-nguyen-160354232/"
-          className="hover:scale-105 w-72 h-20 shadow-sm rounded-lg bg-white flex justify-center items-center gap-4"
+          className="hover:scale-105 w-72 h-20 shadow-sm rounded-lg bg-white flex justify-center items-center gap-4 border"
         >
           <strong className="text-3xl">LinkedIn</strong>
           <Image
