@@ -61,7 +61,7 @@ export default function Page() {
             </div>
             <Image
               src={"/University_of_Akron_seal.svg"}
-              alt="Me and my girlfriend"
+              alt="UA Logo"
               height={120}
               width={120}
               className="rounded-lg"
@@ -76,7 +76,7 @@ export default function Page() {
             </div>
             <Image
               src={"/University_of_Akron_seal.svg"}
-              alt="Me and my girlfriend"
+              alt="UA Logo"
               height={120}
               width={120}
               className="rounded-lg"
@@ -88,8 +88,8 @@ export default function Page() {
       <section className="flex flex-col justify-center w-full">
         <h1 className="text-3xl">EXPERIENCE</h1>
         <div className="gap-8 flex flex-col lg:flex-row pt-8">
-          <div className="flex flex-col-reverse lg:flex-row lg:px-6 justify-between items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 rounded-lg">
-            <div className="flex flex-col items-center gap-2 text-center">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 justify-between items-center w-full bg-white shadow-sm py-4 h-80 px-2 rounded-lg">
+            <div className="flex flex-col items-center gap-2 w-3/4 text-center">
               <strong>Biblish</strong>
               <span>Intern</span>
               <span>Nov 2023 - Present</span>
@@ -98,7 +98,7 @@ export default function Page() {
                 <li>Focus on {'"Submissions"'} product</li>
                 <li>Retool & PostHog for dashboards & analytics</li>
               </ul>
-              <div className="hidden lg:flex items-center justify-center gap-2 flex-wrap">
+              <div className="hidden xl:flex items-center justify-center gap-2 flex-wrap">
                 <Badge word="Next.js" />
                 <Badge word="React" />
                 <Badge word="Tailwind CSS" />
@@ -110,14 +110,14 @@ export default function Page() {
             </div>
             <Image
               src={"/biblish.svg"}
-              alt="Me and my girlfriend"
-              height={120}
-              width={120}
+              alt="Biblish Logo"
+              height={150}
+              width={150}
               className="rounded-lg"
             />
           </div>
           <div className="flex flex-col-reverse lg:flex-row justify-between lg:px-6 items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 rounded-lg">
-            <div className="flex flex-col gap-2 text-center">
+            <div className="flex flex-col gap-2 text-center w-3/4">
               <strong>Goodyear</strong>
               <span>Intern</span>
               <span>May 2023 - Aug 2023</span>
@@ -125,16 +125,16 @@ export default function Page() {
                 <li>Flexera software asset management tool</li>
                 <li>Focus on Java licensing and devices on the cloud</li>
               </ul>
-              <div className="hidden lg:flex items-center justify-center gap-2 flex-wrap">
+              <div className="hidden xl:flex items-center justify-center gap-2 flex-wrap">
                 <Badge word="Flexera" />
                 <Badge word="Excel" />
               </div>
             </div>
             <Image
               src={"https://www.carlogos.org/tire-logos/goodyear-logo.png"}
-              alt="Me and my girlfriend"
-              height={120}
-              width={120}
+              alt="Goodyear Logo"
+              height={150}
+              width={150}
               className="rounded-lg"
             />
           </div>
