@@ -13,10 +13,23 @@ export default function Page() {
         </div>
         <div className="flex items-center gap-4">
           <Link href="https://github.com/kengu7272" className="hover:scale-105">
-            <Image src={"/github-mark.svg"} height={50} width={50} alt="github logo" />
+            <Image
+              src={"/github-mark.svg"}
+              height={50}
+              width={50}
+              alt="github logo"
+            />
           </Link>
-          <Link href="https://www.linkedin.com/in/kevin-nguyen-160354232/" className="hover:scale-105">
-            <Image src={"/linkedin.svg"} height={50} width={50} alt="linkedin logo" />
+          <Link
+            href="https://www.linkedin.com/in/kevin-nguyen-160354232/"
+            className="hover:scale-105"
+          >
+            <Image
+              src={"/linkedin.svg"}
+              height={50}
+              width={50}
+              alt="linkedin logo"
+            />
           </Link>
         </div>
       </section>
@@ -26,14 +39,22 @@ export default function Page() {
           <h1 className="text-3xl">ABOUT</h1>
           <p>
             I was born and raised in Akron, Ohio, and started my little Computer
-            Science journey at The University of Akron. There we mainly worked with 
-            languages such as C++, which was utterly confusing at first, yet extremely interesting.
+            Science journey at The University of Akron. There we mainly worked
+            with languages such as C++, which was utterly confusing at first,
+            yet extremely interesting.
           </p>
           <p>
-            I currently have the pleasure of interning at a start up called <strong>Biblish </strong> 
-            where I assume a role of a mix between a software development and analytics position.
+            I currently have the pleasure of interning at a start up called{" "}
+            <strong>Biblish </strong>
+            where I assume a role of a mix between a software development and
+            analytics position.
           </p>
-          <p>My interests outside of Computer Science include hanging out with friends and of course girlfriend, video games, lifting, and more recently riding my new motorcycle (2021 Yamaha MT-10 for those interested).</p>
+          <p>
+            My interests outside of Computer Science include hanging out with
+            friends and of course girlfriend, video games, lifting, and more
+            recently riding my new motorcycle (2021 Yamaha MT-10 for those
+            interested).
+          </p>
         </div>
         <div className="flex flex-col items-center justify-center gap-2">
           <Image
@@ -87,8 +108,8 @@ export default function Page() {
 
       <section className="flex flex-col justify-center w-full">
         <h1 className="text-3xl">EXPERIENCE</h1>
-        <div className="gap-8 flex flex-col lg:flex-row pt-8">
-          <div className="flex flex-col-reverse lg:flex-row lg:px-6 justify-between border items-center w-full bg-white shadow-sm py-2 h-80 px-2 rounded-lg">
+        <div className="gap-8 flex flex-col lg:flex-row pt-8 h-[900px] xl:h-[700px]">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
             <div className="flex flex-col items-center gap-2 w-3/4 text-center">
               <strong>Biblish</strong>
               <span>Intern</span>
@@ -98,7 +119,7 @@ export default function Page() {
                 <li>Focus on {'"Submissions"'} product</li>
                 <li>Retool & PostHog for dashboards & analytics</li>
               </ul>
-              <div className="hidden xl:flex items-center justify-center gap-2 flex-wrap">
+              <div className="flex items-center justify-center gap-2 flex-wrap">
                 <Badge word="Next.js" />
                 <Badge word="React" />
                 <Badge word="Tailwind CSS" />
@@ -116,7 +137,7 @@ export default function Page() {
               className="rounded-lg"
             />
           </div>
-          <div className="flex flex-col-reverse border lg:flex-row justify-between lg:px-6 items-center w-full bg-white shadow-sm py-2 h-80 lg:h-80 px-2 rounded-lg">
+          <div className="flex flex-col-reverse border lg:flex-row justify-between lg:px-6 items-center w-full bg-white shadow-sm py-2 h-1/2 px-2 rounded-lg">
             <div className="flex flex-col gap-2 text-center w-3/4">
               <strong>Goodyear</strong>
               <span>Intern</span>
@@ -125,7 +146,7 @@ export default function Page() {
                 <li>Flexera software asset management tool</li>
                 <li>Focus on Java licensing and devices on the cloud</li>
               </ul>
-              <div className="hidden xl:flex items-center justify-center gap-2 flex-wrap">
+              <div className="flex items-center justify-center gap-2 flex-wrap">
                 <Badge word="Flexera" />
                 <Badge word="Excel" />
               </div>
