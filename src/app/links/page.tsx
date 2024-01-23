@@ -27,7 +27,19 @@ export default function Page() {
             src={"/linkedin.svg"}
             height={50}
             width={50}
-            alt="github logo"
+            alt="linkedin logo"
+          />
+        </Link>
+        <Link
+          href="/"
+          className="hover:scale-105 w-72 h-20 shadow-sm rounded-lg bg-white flex justify-center items-center gap-4 border"
+        >
+          <strong className="text-3xl">My Website</strong>
+          <Image
+            src={"/logo.png"}
+            height={50}
+            width={50}
+            alt="mywebsite logo"
           />
         </Link>
       </main>

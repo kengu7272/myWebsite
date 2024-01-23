@@ -52,7 +52,7 @@ export default function Page() {
       <section className="flex flex-col w-full">
         <h1 className="text-3xl">EDUCATION</h1>
         <div className="gap-8 flex flex-col lg:flex-row pt-8">
-          <div className="flex justify-between items-center w-full lg:gap-8 bg-white shadow-sm py-6 2xl:py-12 px-2 2xl:px-16 rounded-lg">
+          <div className="flex justify-between items-center border w-full lg:gap-8 bg-white shadow-sm py-6 2xl:py-12 px-2 2xl:px-16 rounded-lg">
             <div className="flex flex-col gap-2 text-center">
               <strong>The University of Akron</strong>
               <span>B.S. Computer Science</span>
@@ -67,7 +67,7 @@ export default function Page() {
               className="rounded-lg"
             />
           </div>
-          <div className="flex justify-between items-center w-full lg:gap-8 bg-white shadow-sm py-6 px-2 2xl:py-12 2xl:px-16 rounded-lg">
+          <div className="flex justify-between items-center w-full border lg:gap-8 bg-white shadow-sm py-6 px-2 2xl:py-12 2xl:px-16 rounded-lg">
             <div className="flex flex-col gap-2 text-center">
               <strong>The University of Akron</strong>
               <span>A.S. Technical Studies</span>
@@ -88,7 +88,7 @@ export default function Page() {
       <section className="flex flex-col justify-center w-full">
         <h1 className="text-3xl">EXPERIENCE</h1>
         <div className="gap-8 flex flex-col lg:flex-row pt-8">
-          <div className="flex flex-col-reverse lg:flex-row lg:px-6 justify-between items-center w-full bg-white shadow-sm py-4 h-80 px-2 rounded-lg">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 justify-between border items-center w-full bg-white shadow-sm py-4 h-80 px-2 rounded-lg">
             <div className="flex flex-col items-center gap-2 w-3/4 text-center">
               <strong>Biblish</strong>
               <span>Intern</span>
@@ -116,7 +116,7 @@ export default function Page() {
               className="rounded-lg"
             />
           </div>
-          <div className="flex flex-col-reverse lg:flex-row justify-between lg:px-6 items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 rounded-lg">
+          <div className="flex flex-col-reverse border lg:flex-row justify-between lg:px-6 items-center w-full bg-white shadow-sm py-4 h-72 lg:h-80 px-2 rounded-lg">
             <div className="flex flex-col gap-2 text-center w-3/4">
               <strong>Goodyear</strong>
               <span>Intern</span>
