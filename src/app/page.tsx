@@ -73,7 +73,7 @@ export default function Page() {
       <section className="flex flex-col w-full">
         <h1 className="text-3xl">EDUCATION</h1>
         <div className="gap-8 flex flex-col lg:flex-row pt-8">
-          <div className="flex justify-between items-center border w-full lg:gap-8 bg-white shadow-sm py-6 2xl:py-12 px-2 2xl:px-16 rounded-lg">
+          <div className="flex justify-between items-center border border-gray-300 w-full lg:gap-8 bg-white shadow-sm py-6 2xl:py-12 px-2 2xl:px-16 rounded-lg">
             <div className="flex flex-col gap-2 text-center">
               <strong>The University of Akron</strong>
               <span>B.S. Computer Science</span>
@@ -88,7 +88,7 @@ export default function Page() {
               className="rounded-lg"
             />
           </div>
-          <div className="flex justify-between items-center w-full border lg:gap-8 bg-white shadow-sm py-6 px-2 2xl:py-12 2xl:px-16 rounded-lg">
+          <div className="flex justify-between border-gray-300 items-center w-full border lg:gap-8 bg-white shadow-sm py-6 px-2 2xl:py-12 2xl:px-16 rounded-lg">
             <div className="flex flex-col gap-2 text-center">
               <strong>The University of Akron</strong>
               <span>A.S. Technical Studies</span>
@@ -109,7 +109,7 @@ export default function Page() {
       <section className="flex flex-col justify-center w-full">
         <h1 className="text-3xl">EXPERIENCE</h1>
         <div className="gap-8 flex flex-col xl:flex-row pt-8 h-[1250px] lg:h-[1000px]">
-          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border border-gray-300 items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
             <div className="flex flex-col h-full py-4 items-center justify-between">
               <div className="flex justify-between h-1/3 w-full items-center">
                 <div className="flex flex-col">
@@ -146,7 +146,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border border-gray-300 items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
             <div className="flex flex-col h-full justify-between py-4 items-center">
               <div className="flex h-1/3 justify-between w-full items-center">
                 <div className="flex flex-col">
