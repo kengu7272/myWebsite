@@ -78,7 +78,7 @@ export default function Page() {
               <strong>The University of Akron</strong>
               <span>B.S. Computer Science</span>
               <span>2020 - 2024</span>
-              <span>3.881</span>
+              <span>3.881 / 4.0</span>
             </div>
             <Image
               src={"/University_of_Akron_seal.svg"}
@@ -93,7 +93,7 @@ export default function Page() {
               <strong>The University of Akron</strong>
               <span>A.S. Technical Studies</span>
               <span>2018 - 2020</span>
-              <span>4.0</span>
+              <span>4.0 / 4.0</span>
             </div>
             <Image
               src={"/University_of_Akron_seal.svg"}
@@ -108,17 +108,32 @@ export default function Page() {
 
       <section className="flex flex-col justify-center w-full">
         <h1 className="text-3xl">EXPERIENCE</h1>
-        <div className="gap-8 flex flex-col lg:flex-row pt-8 h-[900px] xl:h-[700px]">
+        <div className="gap-8 flex flex-col xl:flex-row pt-8 h-[1250px] lg:h-[1000px]">
           <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
-            <div className="flex flex-col items-center gap-2 w-3/4 text-center">
-              <strong>Biblish</strong>
-              <span>Intern</span>
-              <span>Nov 2023 - Present</span>
-              <ul className="text-sm text-gray-600">
-                <li>Next.js full stack development</li>
-                <li>Focus on {'"Submissions"'} product</li>
-                <li>Retool & PostHog for dashboards & analytics</li>
-              </ul>
+            <div className="flex flex-col h-full py-4 items-center justify-between">
+              <div className="flex justify-between h-1/3 w-full items-center">
+                <div className="flex flex-col">
+                  <strong className="text-lg">Biblish</strong>
+                  <span>Intern</span>
+                  <span>Nov 2023 - Present</span>
+                </div>
+                <Image
+                  src={"/biblish.svg"}
+                  alt="Biblish Logo"
+                  height={150}
+                  width={150}
+                  className="rounded-lg"
+                />
+              </div>
+              <p className="h-1/3">
+                I started my internship with Biblish in November of 2023. There
+                I started with analytics tools such as Retool and PostHog to
+                gather and display information regarding the application usage.
+                Later, I was offered the opportunity to participate in the full
+                stack development of the &quot;Submissions&quot; product and website where
+                I utilized modern tools revolving around Next.js to complete
+                tasks.
+              </p>
               <div className="flex items-center justify-center gap-2 flex-wrap">
                 <Badge word="Next.js" />
                 <Badge word="React" />
@@ -129,35 +144,43 @@ export default function Page() {
                 <Badge word="TypeScript" />
               </div>
             </div>
-            <Image
-              src={"/biblish.svg"}
-              alt="Biblish Logo"
-              height={150}
-              width={150}
-              className="rounded-lg"
-            />
           </div>
-          <div className="flex flex-col-reverse border lg:flex-row justify-between lg:px-6 items-center w-full bg-white shadow-sm py-2 h-1/2 px-2 rounded-lg">
-            <div className="flex flex-col gap-2 text-center w-3/4">
-              <strong>Goodyear</strong>
-              <span>Intern</span>
-              <span>May 2023 - Aug 2023</span>
-              <ul className="text-sm text-gray-600">
-                <li>Flexera software asset management tool</li>
-                <li>Focus on Java licensing and devices on the cloud</li>
-              </ul>
+
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
+            <div className="flex flex-col h-full justify-between py-4 items-center">
+              <div className="flex h-1/3 justify-between w-full items-center">
+                <div className="flex flex-col">
+                  <strong className="text-lg">
+                    Goodyear Tire and Rubber Company
+                  </strong>
+                  <span>Intern</span>
+                  <span>May 2023 - Aug 2023</span>
+                </div>
+                <Image
+                  src={"https://www.carlogos.org/tire-logos/goodyear-logo.png"}
+                  alt="Goodyear Logo"
+                  height={150}
+                  width={150}
+                  className="rounded-lg"
+                />
+              </div>
+              <p className="h-1/3">
+                I started my internship with Goodyear in the summer of 2023. There
+                I was placed on the Flexera team, where I learned about and used
+                Flexera, their software asset management tool. My focus was the new Java 
+                licensing rules and devices on the cloud, and to complete tasks, Flexera 
+                was used along with Excel to gather and process data. 
+              </p>
               <div className="flex items-center justify-center gap-2 flex-wrap">
-                <Badge word="Flexera" />
-                <Badge word="Excel" />
+                <Badge word="Next.js" />
+                <Badge word="React" />
+                <Badge word="Tailwind CSS" />
+                <Badge word="tRPC" />
+                <Badge word="Drizzle ORM" />
+                <Badge word="MySQL" />
+                <Badge word="TypeScript" />
               </div>
             </div>
-            <Image
-              src={"https://www.carlogos.org/tire-logos/goodyear-logo.png"}
-              alt="Goodyear Logo"
-              height={150}
-              width={150}
-              className="rounded-lg"
-            />
           </div>
         </div>
       </section>
