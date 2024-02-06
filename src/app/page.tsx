@@ -5,7 +5,7 @@ import { FileText } from "lucide-react";
 
 export default function Page() {
   return (
-    <main className="relative w-screen min-h-screen flex flex-col py-24 items-center gap-24 px-2 lg:px-40 2xl:px-72">
+    <main className="relative w-full flex flex-col pt-24 pb-8 items-center gap-24 px-2 lg:px-40 2xl:px-72">
       <section className="w-full flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-24">
         <div className="flex flex-col justify-center gap-2">
           <h1 className="text-5xl font-bold">Kevin Nguyen</h1>
@@ -113,8 +113,8 @@ export default function Page() {
 
       <section className="flex flex-col justify-center w-full">
         <h1 className="text-3xl">EXPERIENCE</h1>
-        <div className="gap-8 flex flex-col xl:flex-row pt-8 h-[1250px] lg:h-[1000px]">
-          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border border-gray-300 items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
+        <div className="gap-8 flex flex-col xl:flex-row pt-8 h-[1250px] lg:h-[700px] xl:h-[500px]">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 lg:h-full justify-between border border-gray-300 items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
             <div className="flex flex-col h-full py-4 items-center justify-between">
               <div className="flex justify-between h-1/3 w-full items-center">
                 <div className="flex flex-col">
@@ -151,7 +151,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 justify-between border border-gray-300 items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
+          <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 lg:h-full justify-between border border-gray-300 items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
             <div className="flex flex-col h-full justify-between py-4 items-center">
               <div className="flex h-1/3 justify-between w-full items-center">
                 <div className="flex flex-col">
