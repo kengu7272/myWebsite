@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Badge from "./_components/badge";
+import { FileText } from "lucide-react";
 
 export default function Page() {
   return (
@@ -10,6 +11,10 @@ export default function Page() {
           <h1 className="text-5xl font-bold">Kevin Nguyen</h1>
           <span className="text-xl">Computer Science Student</span>
           <span>Aspiring Software Engineer</span>
+          <Link className="flex gap-1 justify-center items-center rounded-lg w-fit" href="/KevinNguyenResume.pdf" download>
+            <span className="text-sky-400 hover:text-sky-500 font-semibold">Resume</span>
+            <FileText/>
+          </Link>
         </div>
         <div className="flex items-center gap-4">
           <Link href="https://github.com/kengu7272" className="hover:scale-105">
