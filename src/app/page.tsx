@@ -5,12 +5,11 @@ import { FileText } from "lucide-react";
 
 export default function Page() {
   return (
-    <main className="relative w-full flex flex-col pt-24 pb-8 items-center gap-24 px-2 lg:px-40 2xl:px-72">
+    <main className="relative w-full flex flex-col py-24 items-center gap-24 px-2 lg:px-40 2xl:px-72">
       <section className="w-full flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-24">
         <div className="flex flex-col justify-center gap-2">
           <h1 className="text-5xl font-bold">Kevin Nguyen</h1>
-          <span className="text-xl">Computer Science Student</span>
-          <span>Aspiring Software Engineer</span>
+          <span className="text-xl">Software Engineer</span>
           <Link className="flex gap-1 justify-center items-center rounded-lg w-fit" href="/KevinNguyenResume.pdf" download>
             <span className="text-sky-400 hover:text-sky-500 font-semibold">Resume</span>
             <FileText/>
@@ -41,7 +40,7 @@ export default function Page() {
 
       <section className="flex flex-col lg:flex-row justify-center lg:justify-between gap-4 w-full">
         <div className="flex flex-col gap-4 lg:w-1/2">
-          <h1 className="text-3xl">ABOUT</h1>
+          <h1 className="text-3xl font-bold">ABOUT</h1>
           <p>
             I was born and raised in Akron, Ohio, and started my little Computer
             Science journey at The University of Akron. There we mainly worked
@@ -76,14 +75,14 @@ export default function Page() {
       </section>
 
       <section className="flex flex-col w-full">
-        <h1 className="text-3xl">EDUCATION</h1>
+        <h1 className="text-3xl font-bold">EDUCATION</h1>
         <div className="gap-8 flex flex-col lg:flex-row pt-8">
           <div className="flex justify-between items-center border border-gray-300 w-full lg:gap-8 bg-white shadow-sm py-6 2xl:py-12 px-2 2xl:px-16 rounded-lg">
             <div className="flex flex-col gap-2 text-center">
               <strong>The University of Akron</strong>
               <span>B.S. Computer Science</span>
               <span>2020 - 2024</span>
-              <span>3.881 / 4.0</span>
+              <span>3.89 / 4.0</span>
             </div>
             <Image
               src={"/University_of_Akron_seal.svg"}
@@ -112,7 +111,7 @@ export default function Page() {
       </section>
 
       <section className="flex flex-col justify-center w-full">
-        <h1 className="text-3xl">EXPERIENCE</h1>
+        <h1 className="text-3xl font-bold">EXPERIENCE</h1>
         <div className="gap-8 flex flex-col xl:flex-row pt-8 h-[1250px] lg:h-[700px] xl:h-[500px]">
           <div className="flex flex-col-reverse lg:flex-row lg:px-6 h-1/2 lg:h-full justify-between border border-gray-300 items-center w-full bg-white shadow-sm py-2 px-2 rounded-lg">
             <div className="flex flex-col h-full py-4 items-center justify-between">
@@ -177,13 +176,8 @@ export default function Page() {
                 was used along with Excel to gather and process data. 
               </p>
               <div className="flex items-center justify-center gap-2 flex-wrap">
-                <Badge word="Next.js" />
-                <Badge word="React" />
-                <Badge word="Tailwind CSS" />
-                <Badge word="tRPC" />
-                <Badge word="Drizzle ORM" />
-                <Badge word="MySQL" />
-                <Badge word="TypeScript" />
+                <Badge word="Flexera" />
+                <Badge word="Excel" />
               </div>
             </div>
           </div>
